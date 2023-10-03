@@ -28,7 +28,7 @@ public static WebDriver driver;
 		driver.findElement(By.id("Input_FirstName")).sendKeys("Radoslav");
 		driver.findElement(By.id("Input_LastName")).sendKeys("Yankov");
 		driver.findElement(By.xpath("/html/body/div/main/div/div/form/button")).click();
-		//driver.close();
+		driver.close();
     }
 
 }
