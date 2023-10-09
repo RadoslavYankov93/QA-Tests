@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import ToolsQAHomePage.Elements;
 
-public class E_TextBox {
+public class E_ChecktBox {
 	
 	private static WebDriver driver1 = null;
 	public static String browser = "chrome";
@@ -29,11 +29,9 @@ public static WebDriver driver;
 		driver1.get("https://demoqa.com/");
 		
 		Elements.E_menu(driver1).click();
-		driver1.findElement(By.xpath("//*[@id=\"item-0\"]/span")).click();
-		driver1.findElement(By.id("userName")).sendKeys("Radoslav93");
-		driver1.findElement(By.id("userEmail")).sendKeys("radozaeka@abv.bg");
-		driver1.findElement(By.id("currentAddress")).sendKeys("Sofia, Bulgaria");
-		driver1.findElement(By.id("permanentAddress")).sendKeys("Sofia, Bulgaria");
-		driver1.findElement(By.xpath("//*[@id=\"submit\"]")).click();
+		driver1.findElement(By.xpath("//*[@id=\"item-1\"]/span")).click();
+		//driver1.findElement(By.className("rct-icon rct-icon-expand-close")).click();
+		//driver1.findElement(By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/ol/li[2]/span/label/span[1]/svg")).click();
+		
 	}
 }
